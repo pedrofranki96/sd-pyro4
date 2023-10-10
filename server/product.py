@@ -7,7 +7,7 @@ class Product(object):
     price = 0.0
     min_qtd = 0
 
-    __init__(self, name, description, qtd, price, min_qtd):
+    def __init__(self, name, description, qtd, price, min_qtd):
         self.name = name
         self.description = description 
         self.qtd = qtd
