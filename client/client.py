@@ -20,12 +20,14 @@ class Client(object):
         print("The warehouse contains:", warehouse.list_contents())
         item = input("Type a thing you want to store (or empty): ").strip()
         if item:
-            warehouse.store(self.name, item)
+            warehouse.add_product(self.name, item)
 
     def retrieve(self, warehouse):
         print("The warehouse contains:", warehouse.list_contents())
         item = input("Type something you want to take (or empty): ").strip()
         if item:
-            warehouse.take(self.name, item)
+            warehouse.remove_product(self.name, item)
+
+    def interface(self):
 
 
